@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="YUP-qp-Tyj">
             <objects>
-                <viewController id="jGa-Jk-Ha6" customClass="LoginViewController" customModule="IndraMovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="jGa-Jk-Ha6" customClass="LoginViewController" customModule="IndraMovieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fpk-1g-Mhp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uhj-5K-1pH">
                                 <rect key="frame" x="82" y="617" width="250" height="145"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CESAR_IOS_SR" borderStyle="roundedRect" placeholder="usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Yn-H5-q0g">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Yn-H5-q0g">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="fEE-tb-atQ"/>
@@ -31,7 +31,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a1b2c3d4" borderStyle="roundedRect" placeholder="contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfA-6H-BXI">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfA-6H-BXI">
                                         <rect key="frame" x="0.0" y="52" width="250" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="HAC-23-ntu"/>
@@ -49,6 +49,9 @@
                                         <state key="normal" title="Log in">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onLoginButtonAction:" destination="jGa-Jk-Ha6" eventType="touchUpInside" id="Olt-cP-wW4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -56,7 +59,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_name" translatesAutoresizingMaskIntoConstraints="NO" id="TVQ-fU-1Ax">
-                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <rect key="frame" x="132" y="114" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="PC7-rF-Uhu"/>
                                     <constraint firstAttribute="height" constant="150" id="Uva-IC-mBG"/>
@@ -66,12 +69,17 @@
                         <viewLayoutGuide key="safeArea" id="UOA-hS-2na"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TVQ-fU-1Ax" firstAttribute="top" secondItem="UOA-hS-2na" secondAttribute="top" constant="70" id="6w7-0h-R38"/>
+                            <constraint firstItem="TVQ-fU-1Ax" firstAttribute="centerX" secondItem="fpk-1g-Mhp" secondAttribute="centerX" id="8ux-9n-Xpd"/>
                             <constraint firstItem="uhj-5K-1pH" firstAttribute="centerX" secondItem="fpk-1g-Mhp" secondAttribute="centerX" id="LZv-iN-2kN"/>
-                            <constraint firstItem="TVQ-fU-1Ax" firstAttribute="centerX" secondItem="fpk-1g-Mhp" secondAttribute="centerX" id="QhP-jk-lG5"/>
-                            <constraint firstItem="TVQ-fU-1Ax" firstAttribute="centerY" secondItem="fpk-1g-Mhp" secondAttribute="centerY" id="aml-uF-abf"/>
                             <constraint firstItem="UOA-hS-2na" firstAttribute="bottom" secondItem="uhj-5K-1pH" secondAttribute="bottom" constant="100" id="jB2-Xt-JXv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="onLogginButton" destination="maF-x8-7gi" id="hpv-iq-6b4"/>
+                        <outlet property="passwordTextField" destination="UfA-6H-BXI" id="kMG-uT-MPC"/>
+                        <outlet property="userTextField" destination="1Yn-H5-q0g" id="7Rm-f3-PLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpj-T6-Pvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

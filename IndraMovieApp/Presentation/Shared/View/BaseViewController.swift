@@ -18,6 +18,13 @@ class BaseViewController: UIViewController {
 
     }
     
+    public func showAlertView(tittle: String, message: String){
+        let alert =  UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelar = UIAlertAction(title: "Ok", style: .default, handler: {(action) in  })
+        alert.addAction(cancelar)
+        present(alert, animated: true, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let appearance = UINavigationBarAppearance()
