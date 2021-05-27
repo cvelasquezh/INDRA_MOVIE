@@ -1,0 +1,6 @@
+framework module Pods_IndraMovieApp {
+  umbrella header "Pods-IndraMovieApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

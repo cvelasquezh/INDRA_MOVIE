@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EDFCE935EDE59AA5515E59E /* Pods_IndraMovieAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DE47FED06EDCB419FFD30D /* Pods_IndraMovieAppTests.framework */; };
+		83745B6BE8FA858B6FBCC278 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68E9A4D82A39204FB06F986 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework */; };
+		952EBE478E3F793A7D34231E /* Pods_IndraMovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD42CD2C46D148FD62F9FAFE /* Pods_IndraMovieApp.framework */; };
+		FC8166E62659220100171917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166E52659220100171917 /* AppDelegate.swift */; };
+		FC8166E82659220100171917 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166E72659220100171917 /* SceneDelegate.swift */; };
+		FC8166EA2659220100171917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166E92659220100171917 /* ViewController.swift */; };
+		FC8166ED2659220100171917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8166EB2659220100171917 /* Main.storyboard */; };
+		FC8166F02659220100171917 /* IndraMovieApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC8166EE2659220100171917 /* IndraMovieApp.xcdatamodeld */; };
+		FC8166F22659220200171917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8166F12659220200171917 /* Assets.xcassets */; };
+		FC8166F52659220200171917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8166F32659220200171917 /* LaunchScreen.storyboard */; };
+		FC8167002659220300171917 /* IndraMovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166FF2659220300171917 /* IndraMovieAppTests.swift */; };
+		FC81670B2659220300171917 /* IndraMovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81670A2659220300171917 /* IndraMovieAppUITests.swift */; };
+		FCD7AB19265F77CC00A50424 /* ConstantHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB11265F77CC00A50424 /* ConstantHelper.swift */; };
+		FCD7AB1A265F77CC00A50424 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB13265F77CC00A50424 /* UIImageView+Extension.swift */; };
+		FCD7AB1B265F77CC00A50424 /* BaseApiClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB14265F77CC00A50424 /* BaseApiClientConfig.swift */; };
+		FCD7AB1C265F77CC00A50424 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB16265F77CC00A50424 /* Enviroment.swift */; };
+		FCD7AB1D265F77CC00A50424 /* Conectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB18265F77CC00A50424 /* Conectivity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC8166FC2659220200171917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC8166DA2659220100171917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC8166E12659220100171917;
+			remoteInfo = IndraMovieApp;
+		};
+		FC8167072659220300171917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC8166DA2659220100171917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC8166E12659220100171917;
+			remoteInfo = IndraMovieApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0887FE7E75580E17F147102E /* Pods-IndraMovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieApp.debug.xcconfig"; path = "Target Support Files/Pods-IndraMovieApp/Pods-IndraMovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0E18EA815EBB6E7A111EDF8D /* Pods-IndraMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieAppTests.debug.xcconfig"; path = "Target Support Files/Pods-IndraMovieAppTests/Pods-IndraMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C488DD9CD531B2DF926AEC4 /* Pods-IndraMovieApp-IndraMovieAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieApp-IndraMovieAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-IndraMovieApp-IndraMovieAppUITests/Pods-IndraMovieApp-IndraMovieAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E3DA5EC89A3D3604DCF8C8B /* Pods-IndraMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieAppTests.release.xcconfig"; path = "Target Support Files/Pods-IndraMovieAppTests/Pods-IndraMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		56DE47FED06EDCB419FFD30D /* Pods_IndraMovieAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndraMovieAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE942A458AFCCAC52706919 /* Pods-IndraMovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieApp.release.xcconfig"; path = "Target Support Files/Pods-IndraMovieApp/Pods-IndraMovieApp.release.xcconfig"; sourceTree = "<group>"; };
+		BD42CD2C46D148FD62F9FAFE /* Pods_IndraMovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndraMovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C6E2557605F0B26C320C98 /* Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig"; path = "Target Support Files/Pods-IndraMovieApp-IndraMovieAppUITests/Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E68E9A4D82A39204FB06F986 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndraMovieApp_IndraMovieAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8166E22659220100171917 /* IndraMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndraMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8166E52659220100171917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC8166E72659220100171917 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC8166E92659220100171917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC8166EC2659220100171917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC8166EF2659220100171917 /* IndraMovieApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IndraMovieApp.xcdatamodel; sourceTree = "<group>"; };
+		FC8166F12659220200171917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC8166F42659220200171917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC8166F62659220200171917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8166FB2659220200171917 /* IndraMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndraMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8166FF2659220300171917 /* IndraMovieAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndraMovieAppTests.swift; sourceTree = "<group>"; };
+		FC8167012659220300171917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8167062659220300171917 /* IndraMovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndraMovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC81670A2659220300171917 /* IndraMovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndraMovieAppUITests.swift; sourceTree = "<group>"; };
+		FC81670C2659220300171917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD7AB11265F77CC00A50424 /* ConstantHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantHelper.swift; sourceTree = "<group>"; };
+		FCD7AB13265F77CC00A50424 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		FCD7AB14265F77CC00A50424 /* BaseApiClientConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiClientConfig.swift; sourceTree = "<group>"; };
+		FCD7AB16265F77CC00A50424 /* Enviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		FCD7AB18265F77CC00A50424 /* Conectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conectivity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC8166DF2659220100171917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952EBE478E3F793A7D34231E /* Pods_IndraMovieApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8166F82659220200171917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EDFCE935EDE59AA5515E59E /* Pods_IndraMovieAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8167032659220300171917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83745B6BE8FA858B6FBCC278 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72C51B07F89078972E6092D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD42CD2C46D148FD62F9FAFE /* Pods_IndraMovieApp.framework */,
+				E68E9A4D82A39204FB06F986 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework */,
+				56DE47FED06EDCB419FFD30D /* Pods_IndraMovieAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F96FD4A90B5772DA29248593 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0887FE7E75580E17F147102E /* Pods-IndraMovieApp.debug.xcconfig */,
+				6AE942A458AFCCAC52706919 /* Pods-IndraMovieApp.release.xcconfig */,
+				4C488DD9CD531B2DF926AEC4 /* Pods-IndraMovieApp-IndraMovieAppUITests.debug.xcconfig */,
+				D3C6E2557605F0B26C320C98 /* Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig */,
+				0E18EA815EBB6E7A111EDF8D /* Pods-IndraMovieAppTests.debug.xcconfig */,
+				4E3DA5EC89A3D3604DCF8C8B /* Pods-IndraMovieAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC8166D92659220100171917 = {
+			isa = PBXGroup;
+			children = (
+				FC8166E42659220100171917 /* IndraMovieApp */,
+				FC8166FE2659220300171917 /* IndraMovieAppTests */,
+				FC8167092659220300171917 /* IndraMovieAppUITests */,
+				FC8166E32659220100171917 /* Products */,
+				F96FD4A90B5772DA29248593 /* Pods */,
+				72C51B07F89078972E6092D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8166E32659220100171917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC8166E22659220100171917 /* IndraMovieApp.app */,
+				FC8166FB2659220200171917 /* IndraMovieAppTests.xctest */,
+				FC8167062659220300171917 /* IndraMovieAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC8166E42659220100171917 /* IndraMovieApp */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB10265F776300A50424 /* Core */,
+				FC8166E52659220100171917 /* AppDelegate.swift */,
+				FC8166E72659220100171917 /* SceneDelegate.swift */,
+				FC8166E92659220100171917 /* ViewController.swift */,
+				FC8166EB2659220100171917 /* Main.storyboard */,
+				FC8166F12659220200171917 /* Assets.xcassets */,
+				FC8166F32659220200171917 /* LaunchScreen.storyboard */,
+				FC8166F62659220200171917 /* Info.plist */,
+				FC8166EE2659220100171917 /* IndraMovieApp.xcdatamodeld */,
+			);
+			path = IndraMovieApp;
+			sourceTree = "<group>";
+		};
+		FC8166FE2659220300171917 /* IndraMovieAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC8166FF2659220300171917 /* IndraMovieAppTests.swift */,
+				FC8167012659220300171917 /* Info.plist */,
+			);
+			path = IndraMovieAppTests;
+			sourceTree = "<group>";
+		};
+		FC8167092659220300171917 /* IndraMovieAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC81670A2659220300171917 /* IndraMovieAppUITests.swift */,
+				FC81670C2659220300171917 /* Info.plist */,
+			);
+			path = IndraMovieAppUITests;
+			sourceTree = "<group>";
+		};
+		FCD7AB10265F776300A50424 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB14265F77CC00A50424 /* BaseApiClientConfig.swift */,
+				FCD7AB11265F77CC00A50424 /* ConstantHelper.swift */,
+				FCD7AB12265F77CC00A50424 /* Extensions */,
+				FCD7AB15265F77CC00A50424 /* Helper */,
+				FCD7AB17265F77CC00A50424 /* Util */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FCD7AB12265F77CC00A50424 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB13265F77CC00A50424 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCD7AB15265F77CC00A50424 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB16265F77CC00A50424 /* Enviroment.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FCD7AB17265F77CC00A50424 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB18265F77CC00A50424 /* Conectivity.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC8166E12659220100171917 /* IndraMovieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC81670F2659220300171917 /* Build configuration list for PBXNativeTarget "IndraMovieApp" */;
+			buildPhases = (
+				0FDA9F2825A0A3A84855B11A /* [CP] Check Pods Manifest.lock */,
+				FC8166DE2659220100171917 /* Sources */,
+				FC8166DF2659220100171917 /* Frameworks */,
+				FC8166E02659220100171917 /* Resources */,
+				812C85FF04A6014CAFA52865 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndraMovieApp;
+			productName = IndraMovieApp;
+			productReference = FC8166E22659220100171917 /* IndraMovieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC8166FA2659220200171917 /* IndraMovieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8167122659220300171917 /* Build configuration list for PBXNativeTarget "IndraMovieAppTests" */;
+			buildPhases = (
+				305E2C56D528DA1490083EC4 /* [CP] Check Pods Manifest.lock */,
+				FC8166F72659220200171917 /* Sources */,
+				FC8166F82659220200171917 /* Frameworks */,
+				FC8166F92659220200171917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC8166FD2659220200171917 /* PBXTargetDependency */,
+			);
+			name = IndraMovieAppTests;
+			productName = IndraMovieAppTests;
+			productReference = FC8166FB2659220200171917 /* IndraMovieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC8167052659220300171917 /* IndraMovieAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8167152659220300171917 /* Build configuration list for PBXNativeTarget "IndraMovieAppUITests" */;
+			buildPhases = (
+				F65B4B1A710B625464B10733 /* [CP] Check Pods Manifest.lock */,
+				FC8167022659220300171917 /* Sources */,
+				FC8167032659220300171917 /* Frameworks */,
+				FC8167042659220300171917 /* Resources */,
+				A263C04B4F7A89EE4587E0E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC8167082659220300171917 /* PBXTargetDependency */,
+			);
+			name = IndraMovieAppUITests;
+			productName = IndraMovieAppUITests;
+			productReference = FC8167062659220300171917 /* IndraMovieAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC8166DA2659220100171917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FC8166E12659220100171917 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FC8166FA2659220200171917 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FC8166E12659220100171917;
+					};
+					FC8167052659220300171917 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FC8166E12659220100171917;
+					};
+				};
+			};
+			buildConfigurationList = FC8166DD2659220100171917 /* Build configuration list for PBXProject "IndraMovieApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC8166D92659220100171917;
+			productRefGroup = FC8166E32659220100171917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC8166E12659220100171917 /* IndraMovieApp */,
+				FC8166FA2659220200171917 /* IndraMovieAppTests */,
+				FC8167052659220300171917 /* IndraMovieAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC8166E02659220100171917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8166F52659220200171917 /* LaunchScreen.storyboard in Resources */,
+				FC8166F22659220200171917 /* Assets.xcassets in Resources */,
+				FC8166ED2659220100171917 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8166F92659220200171917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8167042659220300171917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FDA9F2825A0A3A84855B11A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndraMovieApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		305E2C56D528DA1490083EC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndraMovieAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		812C85FF04A6014CAFA52865 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IndraMovieApp/Pods-IndraMovieApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IndraMovieApp/Pods-IndraMovieApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IndraMovieApp/Pods-IndraMovieApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A263C04B4F7A89EE4587E0E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IndraMovieApp-IndraMovieAppUITests/Pods-IndraMovieApp-IndraMovieAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IndraMovieApp-IndraMovieAppUITests/Pods-IndraMovieApp-IndraMovieAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IndraMovieApp-IndraMovieAppUITests/Pods-IndraMovieApp-IndraMovieAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F65B4B1A710B625464B10733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndraMovieApp-IndraMovieAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC8166DE2659220100171917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD7AB1A265F77CC00A50424 /* UIImageView+Extension.swift in Sources */,
+				FCD7AB1D265F77CC00A50424 /* Conectivity.swift in Sources */,
+				FCD7AB19265F77CC00A50424 /* ConstantHelper.swift in Sources */,
+				FCD7AB1C265F77CC00A50424 /* Enviroment.swift in Sources */,
+				FC8166EA2659220100171917 /* ViewController.swift in Sources */,
+				FC8166F02659220100171917 /* IndraMovieApp.xcdatamodeld in Sources */,
+				FC8166E62659220100171917 /* AppDelegate.swift in Sources */,
+				FC8166E82659220100171917 /* SceneDelegate.swift in Sources */,
+				FCD7AB1B265F77CC00A50424 /* BaseApiClientConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8166F72659220200171917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8167002659220300171917 /* IndraMovieAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8167022659220300171917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC81670B2659220300171917 /* IndraMovieAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC8166FD2659220200171917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC8166E12659220100171917 /* IndraMovieApp */;
+			targetProxy = FC8166FC2659220200171917 /* PBXContainerItemProxy */;
+		};
+		FC8167082659220300171917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC8166E12659220100171917 /* IndraMovieApp */;
+			targetProxy = FC8167072659220300171917 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC8166EB2659220100171917 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8166EC2659220100171917 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC8166F32659220200171917 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8166F42659220200171917 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC81670D2659220300171917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC81670E2659220300171917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC8167102659220300171917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0887FE7E75580E17F147102E /* Pods-IndraMovieApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndraMovieApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indra.IndraMovieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC8167112659220300171917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE942A458AFCCAC52706919 /* Pods-IndraMovieApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndraMovieApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indra.IndraMovieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC8167132659220300171917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E18EA815EBB6E7A111EDF8D /* Pods-IndraMovieAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndraMovieAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indra.IndraMovieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndraMovieApp.app/IndraMovieApp";
+			};
+			name = Debug;
+		};
+		FC8167142659220300171917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3DA5EC89A3D3604DCF8C8B /* Pods-IndraMovieAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndraMovieAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indra.IndraMovieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndraMovieApp.app/IndraMovieApp";
+			};
+			name = Release;
+		};
+		FC8167162659220300171917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C488DD9CD531B2DF926AEC4 /* Pods-IndraMovieApp-IndraMovieAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndraMovieAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indra.IndraMovieAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IndraMovieApp;
+			};
+			name = Debug;
+		};
+		FC8167172659220300171917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C6E2557605F0B26C320C98 /* Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndraMovieAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.indra.IndraMovieAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IndraMovieApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC8166DD2659220100171917 /* Build configuration list for PBXProject "IndraMovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC81670D2659220300171917 /* Debug */,
+				FC81670E2659220300171917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC81670F2659220300171917 /* Build configuration list for PBXNativeTarget "IndraMovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8167102659220300171917 /* Debug */,
+				FC8167112659220300171917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8167122659220300171917 /* Build configuration list for PBXNativeTarget "IndraMovieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8167132659220300171917 /* Debug */,
+				FC8167142659220300171917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8167152659220300171917 /* Build configuration list for PBXNativeTarget "IndraMovieAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8167162659220300171917 /* Debug */,
+				FC8167172659220300171917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC8166EE2659220100171917 /* IndraMovieApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC8166EF2659220100171917 /* IndraMovieApp.xcdatamodel */,
+			);
+			currentVersion = FC8166EF2659220100171917 /* IndraMovieApp.xcdatamodel */;
+			path = IndraMovieApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC8166DA2659220100171917 /* Project object */;
+}
