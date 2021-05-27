@@ -30,6 +30,10 @@
 		FCD7AB31265F787200A50424 /* DetailMovieApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB29265F787200A50424 /* DetailMovieApiManager.swift */; };
 		FCD7AB32265F787200A50424 /* BaseApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB2B265F787200A50424 /* BaseApiManager.swift */; };
 		FCD7AB33265F787200A50424 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB2D265F787200A50424 /* ErrorResult.swift */; };
+		FCD7AB40265F78E300A50424 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB39265F78E300A50424 /* HomeViewModel.swift */; };
+		FCD7AB41265F78E300A50424 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB3B265F78E300A50424 /* BaseViewModel.swift */; };
+		FCD7AB42265F78E300A50424 /* ErrorResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB3D265F78E300A50424 /* ErrorResultModel.swift */; };
+		FCD7AB43265F78E300A50424 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB3F265F78E300A50424 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		FCD7AB29265F787200A50424 /* DetailMovieApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMovieApiManager.swift; sourceTree = "<group>"; };
 		FCD7AB2B265F787200A50424 /* BaseApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiManager.swift; sourceTree = "<group>"; };
 		FCD7AB2D265F787200A50424 /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		FCD7AB39265F78E300A50424 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FCD7AB3B265F78E300A50424 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FCD7AB3D265F78E300A50424 /* ErrorResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResultModel.swift; sourceTree = "<group>"; };
+		FCD7AB3F265F78E300A50424 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,7 @@
 		FC8166E42659220100171917 /* IndraMovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCD7AB37265F78E300A50424 /* Domain */,
 				FCD7AB21265F787200A50424 /* Data */,
 				FCD7AB10265F776300A50424 /* Core */,
 				FC8166E52659220100171917 /* AppDelegate.swift */,
@@ -290,6 +299,49 @@
 				FCD7AB2D265F787200A50424 /* ErrorResult.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		FCD7AB37265F78E300A50424 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB38265F78E300A50424 /* Home */,
+				FCD7AB3A265F78E300A50424 /* Shared */,
+				FCD7AB3E265F78E300A50424 /* Detail */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FCD7AB38265F78E300A50424 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB39265F78E300A50424 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FCD7AB3A265F78E300A50424 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB3B265F78E300A50424 /* BaseViewModel.swift */,
+				FCD7AB3C265F78E300A50424 /* Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FCD7AB3C265F78E300A50424 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB3D265F78E300A50424 /* ErrorResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCD7AB3E265F78E300A50424 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB3F265F78E300A50424 /* DetailViewModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,9 +584,12 @@
 			files = (
 				FCD7AB1A265F77CC00A50424 /* UIImageView+Extension.swift in Sources */,
 				FCD7AB1D265F77CC00A50424 /* Conectivity.swift in Sources */,
+				FCD7AB41265F78E300A50424 /* BaseViewModel.swift in Sources */,
 				FCD7AB19265F77CC00A50424 /* ConstantHelper.swift in Sources */,
+				FCD7AB40265F78E300A50424 /* HomeViewModel.swift in Sources */,
 				FCD7AB30265F787200A50424 /* MovieDetail.swift in Sources */,
 				FCD7AB1C265F77CC00A50424 /* Enviroment.swift in Sources */,
+				FCD7AB43265F78E300A50424 /* DetailViewModel.swift in Sources */,
 				FC8166EA2659220100171917 /* ViewController.swift in Sources */,
 				FCD7AB33265F787200A50424 /* ErrorResult.swift in Sources */,
 				FCD7AB31265F787200A50424 /* DetailMovieApiManager.swift in Sources */,
@@ -543,6 +598,7 @@
 				FC8166E82659220100171917 /* SceneDelegate.swift in Sources */,
 				FCD7AB1B265F77CC00A50424 /* BaseApiClientConfig.swift in Sources */,
 				FCD7AB2E265F787200A50424 /* HomeApiManager.swift in Sources */,
+				FCD7AB42265F78E300A50424 /* ErrorResultModel.swift in Sources */,
 				FCD7AB2F265F787200A50424 /* MoviewEntity.swift in Sources */,
 				FCD7AB32265F787200A50424 /* BaseApiManager.swift in Sources */,
 			);
