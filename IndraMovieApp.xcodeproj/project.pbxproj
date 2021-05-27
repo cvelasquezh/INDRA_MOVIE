@@ -42,6 +42,8 @@
 		FCD7AB5D265F790800A50424 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB53265F790800A50424 /* DetailViewController.swift */; };
 		FCD7AB5E265F790800A50424 /* LoginUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD7AB56265F790800A50424 /* LoginUser.storyboard */; };
 		FCD7AB5F265F790800A50424 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB57265F790800A50424 /* LoginViewController.swift */; };
+		FCD7AB65265FCE9D00A50424 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB64265FCE9D00A50424 /* LoginViewModel.swift */; };
+		FCD7AB6E265FD05000A50424 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB6D265FD05000A50424 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		FCD7AB53265F790800A50424 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FCD7AB56265F790800A50424 /* LoginUser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginUser.storyboard; sourceTree = "<group>"; };
 		FCD7AB57265F790800A50424 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FCD7AB64265FCE9D00A50424 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FCD7AB6D265FD05000A50424 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,7 @@
 		FCD7AB37265F78E300A50424 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				FCD7AB63265FCE8C00A50424 /* Login */,
 				FCD7AB38265F78E300A50424 /* Home */,
 				FCD7AB3A265F78E300A50424 /* Shared */,
 				FCD7AB3E265F78E300A50424 /* Detail */,
@@ -438,6 +443,23 @@
 				FCD7AB57265F790800A50424 /* LoginViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FCD7AB63265FCE8C00A50424 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB6C265FD04200A50424 /* Model */,
+				FCD7AB64265FCE9D00A50424 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FCD7AB6C265FD04200A50424 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB6D265FD05000A50424 /* LoginModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -694,6 +716,7 @@
 				FCD7AB43265F78E300A50424 /* DetailViewModel.swift in Sources */,
 				FC8166EA2659220100171917 /* ViewController.swift in Sources */,
 				FCD7AB5F265F790800A50424 /* LoginViewController.swift in Sources */,
+				FCD7AB65265FCE9D00A50424 /* LoginViewModel.swift in Sources */,
 				FCD7AB33265F787200A50424 /* ErrorResult.swift in Sources */,
 				FCD7AB31265F787200A50424 /* DetailMovieApiManager.swift in Sources */,
 				FCD7AB5C265F790800A50424 /* BaseViewController.swift in Sources */,
@@ -701,6 +724,7 @@
 				FC8166E62659220100171917 /* AppDelegate.swift in Sources */,
 				FC8166E82659220100171917 /* SceneDelegate.swift in Sources */,
 				FCD7AB1B265F77CC00A50424 /* BaseApiClientConfig.swift in Sources */,
+				FCD7AB6E265FD05000A50424 /* LoginModel.swift in Sources */,
 				FCD7AB2E265F787200A50424 /* HomeApiManager.swift in Sources */,
 				FCD7AB42265F78E300A50424 /* ErrorResultModel.swift in Sources */,
 				FCD7AB2F265F787200A50424 /* MoviewEntity.swift in Sources */,

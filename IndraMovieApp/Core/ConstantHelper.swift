@@ -9,6 +9,16 @@ import Foundation
 
 /// Constante de string vacio : ""
 public let emptyString: String = ""
+public let userHarcode: String = "Admin"
+public let passwordHarcode: String = "Password*123"
+
+public let mandatoryFieldMessage = "Es necesario completar este campo."
+public let incompleteFieldPassword = "El password está incompleto."
+public let invalidateUser = "Usuario incorrecto"
+public let invalidatePass = "Password incorrecto"
+
+
+
 
 struct Constants {
     static let apiKey = "?api_key=cfda7ff25007f36b79231480d8c00104"

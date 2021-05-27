@@ -18,6 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        //showHomeView(scene: windowScene)
+        showLoginView(scene: windowScene)
+    }
+    
+    func showHomeView(scene: UIWindowScene){
         window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController else {
@@ -28,7 +33,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window?.rootViewController = navControler
         window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
+        window?.windowScene = scene
+    }
+    
+    func showLoginView(scene: UIWindowScene){
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "LoginUser", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
+            return
+        }
+        viewController.barNavigationIsHidden = true
+        let navControler = UINavigationController(rootViewController: viewController)
+
+        window?.rootViewController = navControler
+        window?.makeKeyAndVisible()
+        window?.windowScene = scene
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
