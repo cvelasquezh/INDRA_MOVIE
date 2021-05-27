@@ -34,6 +34,14 @@
 		FCD7AB41265F78E300A50424 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB3B265F78E300A50424 /* BaseViewModel.swift */; };
 		FCD7AB42265F78E300A50424 /* ErrorResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB3D265F78E300A50424 /* ErrorResultModel.swift */; };
 		FCD7AB43265F78E300A50424 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB3F265F78E300A50424 /* DetailViewModel.swift */; };
+		FCD7AB58265F790800A50424 /* CustomMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD7AB4A265F790800A50424 /* CustomMovieCell.xib */; };
+		FCD7AB59265F790800A50424 /* CustomMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB4B265F790800A50424 /* CustomMovieCell.swift */; };
+		FCD7AB5A265F790800A50424 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD7AB4C265F790800A50424 /* Home.storyboard */; };
+		FCD7AB5B265F790800A50424 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB4D265F790800A50424 /* HomeViewController.swift */; };
+		FCD7AB5C265F790800A50424 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB50265F790800A50424 /* BaseViewController.swift */; };
+		FCD7AB5D265F790800A50424 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB53265F790800A50424 /* DetailViewController.swift */; };
+		FCD7AB5E265F790800A50424 /* LoginUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD7AB56265F790800A50424 /* LoginUser.storyboard */; };
+		FCD7AB5F265F790800A50424 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7AB57265F790800A50424 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +101,14 @@
 		FCD7AB3B265F78E300A50424 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FCD7AB3D265F78E300A50424 /* ErrorResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResultModel.swift; sourceTree = "<group>"; };
 		FCD7AB3F265F78E300A50424 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		FCD7AB4A265F790800A50424 /* CustomMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMovieCell.xib; sourceTree = "<group>"; };
+		FCD7AB4B265F790800A50424 /* CustomMovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMovieCell.swift; sourceTree = "<group>"; };
+		FCD7AB4C265F790800A50424 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FCD7AB4D265F790800A50424 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FCD7AB50265F790800A50424 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FCD7AB53265F790800A50424 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FCD7AB56265F790800A50424 /* LoginUser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginUser.storyboard; sourceTree = "<group>"; };
+		FCD7AB57265F790800A50424 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +187,7 @@
 		FC8166E42659220100171917 /* IndraMovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCD7AB47265F790800A50424 /* Presentation */,
 				FCD7AB37265F78E300A50424 /* Domain */,
 				FCD7AB21265F787200A50424 /* Data */,
 				FCD7AB10265F776300A50424 /* Core */,
@@ -344,6 +361,85 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		FCD7AB47265F790800A50424 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB48265F790800A50424 /* Home */,
+				FCD7AB4E265F790800A50424 /* Shared */,
+				FCD7AB51265F790800A50424 /* Detail */,
+				FCD7AB54265F790800A50424 /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FCD7AB48265F790800A50424 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB49265F790800A50424 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FCD7AB49265F790800A50424 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB4A265F790800A50424 /* CustomMovieCell.xib */,
+				FCD7AB4B265F790800A50424 /* CustomMovieCell.swift */,
+				FCD7AB4C265F790800A50424 /* Home.storyboard */,
+				FCD7AB4D265F790800A50424 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD7AB4E265F790800A50424 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB4F265F790800A50424 /* View */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FCD7AB4F265F790800A50424 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB50265F790800A50424 /* BaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD7AB51265F790800A50424 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB52265F790800A50424 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FCD7AB52265F790800A50424 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB53265F790800A50424 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD7AB54265F790800A50424 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB55265F790800A50424 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FCD7AB55265F790800A50424 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7AB56265F790800A50424 /* LoginUser.storyboard */,
+				FCD7AB57265F790800A50424 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -453,8 +549,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8166F52659220200171917 /* LaunchScreen.storyboard in Resources */,
+				FCD7AB5A265F790800A50424 /* Home.storyboard in Resources */,
 				FC8166F22659220200171917 /* Assets.xcassets in Resources */,
+				FCD7AB5E265F790800A50424 /* LoginUser.storyboard in Resources */,
 				FC8166ED2659220100171917 /* Main.storyboard in Resources */,
+				FCD7AB58265F790800A50424 /* CustomMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,15 +683,20 @@
 			files = (
 				FCD7AB1A265F77CC00A50424 /* UIImageView+Extension.swift in Sources */,
 				FCD7AB1D265F77CC00A50424 /* Conectivity.swift in Sources */,
+				FCD7AB5D265F790800A50424 /* DetailViewController.swift in Sources */,
 				FCD7AB41265F78E300A50424 /* BaseViewModel.swift in Sources */,
+				FCD7AB59265F790800A50424 /* CustomMovieCell.swift in Sources */,
 				FCD7AB19265F77CC00A50424 /* ConstantHelper.swift in Sources */,
+				FCD7AB5B265F790800A50424 /* HomeViewController.swift in Sources */,
 				FCD7AB40265F78E300A50424 /* HomeViewModel.swift in Sources */,
 				FCD7AB30265F787200A50424 /* MovieDetail.swift in Sources */,
 				FCD7AB1C265F77CC00A50424 /* Enviroment.swift in Sources */,
 				FCD7AB43265F78E300A50424 /* DetailViewModel.swift in Sources */,
 				FC8166EA2659220100171917 /* ViewController.swift in Sources */,
+				FCD7AB5F265F790800A50424 /* LoginViewController.swift in Sources */,
 				FCD7AB33265F787200A50424 /* ErrorResult.swift in Sources */,
 				FCD7AB31265F787200A50424 /* DetailMovieApiManager.swift in Sources */,
+				FCD7AB5C265F790800A50424 /* BaseViewController.swift in Sources */,
 				FC8166F02659220100171917 /* IndraMovieApp.xcdatamodeld in Sources */,
 				FC8166E62659220100171917 /* AppDelegate.swift in Sources */,
 				FC8166E82659220100171917 /* SceneDelegate.swift in Sources */,
