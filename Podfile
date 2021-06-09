@@ -8,6 +8,8 @@ target 'IndraMovieApp' do
   # Pods for IndraMovieApp
   pod 'Alamofire', '4.9.0'
   pod 'IQKeyboardManager'
+  pod 'RealmSwift', '10.1.2'
+
   
   target 'IndraMovieAppTests' do
     inherit! :search_paths

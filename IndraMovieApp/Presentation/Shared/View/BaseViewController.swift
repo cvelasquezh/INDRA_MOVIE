@@ -61,6 +61,7 @@ extension BaseViewController: BaseViewModelOutput {
     
     func onInternetConnectionError() {
         //TODO impletments alert message
+        //showAlertView(tittle: "Error de Conexion", message: "NO hay conexion ah internet")
 
     }
     

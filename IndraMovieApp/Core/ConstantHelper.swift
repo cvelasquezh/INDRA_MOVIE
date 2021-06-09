@@ -9,8 +9,10 @@ import Foundation
 
 /// Constante de string vacio : ""
 public let emptyString: String = ""
-public let userHarcode: String = "Admin"
-public let passwordHarcode: String = "Password*123"
+//public let userHarcode: String = "Admin"
+//public let passwordHarcode: String = "Password*123"
+public let userHarcode: String = "a"
+public let passwordHarcode: String = "a"
 
 public let mandatoryFieldMessage = "Es necesario completar este campo."
 public let incompleteFieldPassword = "El password está incompleto."

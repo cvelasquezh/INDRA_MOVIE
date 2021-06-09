@@ -47,6 +47,7 @@ extension DetailViewController: DetailViewModelOutput {
             self.voteAverage.text = String(movie.voteAverage)
             self.imageFilm.imageFromServerURL(urlString: Constants.URL.urlImages+movie.posterPath, placeHolderImage: UIImage(named: "background")!)
             
+            
         }
     }
 }

@@ -10,6 +10,9 @@
 		1EDFCE935EDE59AA5515E59E /* Pods_IndraMovieAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DE47FED06EDCB419FFD30D /* Pods_IndraMovieAppTests.framework */; };
 		83745B6BE8FA858B6FBCC278 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68E9A4D82A39204FB06F986 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework */; };
 		952EBE478E3F793A7D34231E /* Pods_IndraMovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD42CD2C46D148FD62F9FAFE /* Pods_IndraMovieApp.framework */; };
+		FC42978C26701A1D006C35BC /* RealmDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42978B26701A1D006C35BC /* RealmDatabase.swift */; };
+		FC42979B267022FC006C35BC /* HomeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42979A267022FC006C35BC /* HomeDAO.swift */; };
+		FC4297A026702319006C35BC /* DetailMovieDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42979F26702319006C35BC /* DetailMovieDao.swift */; };
 		FC8166E62659220100171917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166E52659220100171917 /* AppDelegate.swift */; };
 		FC8166E82659220100171917 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166E72659220100171917 /* SceneDelegate.swift */; };
 		FC8166EA2659220100171917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8166E92659220100171917 /* ViewController.swift */; };
@@ -73,6 +76,9 @@
 		BD42CD2C46D148FD62F9FAFE /* Pods_IndraMovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndraMovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C6E2557605F0B26C320C98 /* Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig"; path = "Target Support Files/Pods-IndraMovieApp-IndraMovieAppUITests/Pods-IndraMovieApp-IndraMovieAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E68E9A4D82A39204FB06F986 /* Pods_IndraMovieApp_IndraMovieAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndraMovieApp_IndraMovieAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC42978B26701A1D006C35BC /* RealmDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabase.swift; sourceTree = "<group>"; };
+		FC42979A267022FC006C35BC /* HomeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDAO.swift; sourceTree = "<group>"; };
+		FC42979F26702319006C35BC /* DetailMovieDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieDao.swift; sourceTree = "<group>"; };
 		FC8166E22659220100171917 /* IndraMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndraMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8166E52659220100171917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC8166E72659220100171917 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +170,14 @@
 				4E3DA5EC89A3D3604DCF8C8B /* Pods-IndraMovieAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC42978026701890006C35BC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				FC42978B26701A1D006C35BC /* RealmDatabase.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 		FC8166D92659220100171917 = {
@@ -264,6 +278,7 @@
 		FCD7AB21265F787200A50424 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FC42978026701890006C35BC /* DataBase */,
 				FCD7AB22265F787200A50424 /* Home */,
 				FCD7AB26265F787200A50424 /* DetailHome */,
 				FCD7AB2A265F787200A50424 /* Service */,
@@ -274,6 +289,7 @@
 		FCD7AB22265F787200A50424 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FC42979A267022FC006C35BC /* HomeDAO.swift */,
 				FCD7AB23265F787200A50424 /* HomeApiManager.swift */,
 				FCD7AB24265F787200A50424 /* Entity */,
 			);
@@ -293,6 +309,7 @@
 			children = (
 				FCD7AB27265F787200A50424 /* Entity */,
 				FCD7AB29265F787200A50424 /* DetailMovieApiManager.swift */,
+				FC42979F26702319006C35BC /* DetailMovieDao.swift */,
 			);
 			path = DetailHome;
 			sourceTree = "<group>";
@@ -717,8 +734,11 @@
 				FC8166EA2659220100171917 /* ViewController.swift in Sources */,
 				FCD7AB5F265F790800A50424 /* LoginViewController.swift in Sources */,
 				FCD7AB65265FCE9D00A50424 /* LoginViewModel.swift in Sources */,
+				FC42978C26701A1D006C35BC /* RealmDatabase.swift in Sources */,
 				FCD7AB33265F787200A50424 /* ErrorResult.swift in Sources */,
+				FC4297A026702319006C35BC /* DetailMovieDao.swift in Sources */,
 				FCD7AB31265F787200A50424 /* DetailMovieApiManager.swift in Sources */,
+				FC42979B267022FC006C35BC /* HomeDAO.swift in Sources */,
 				FCD7AB5C265F790800A50424 /* BaseViewController.swift in Sources */,
 				FC8166F02659220100171917 /* IndraMovieApp.xcdatamodeld in Sources */,
 				FC8166E62659220100171917 /* AppDelegate.swift in Sources */,

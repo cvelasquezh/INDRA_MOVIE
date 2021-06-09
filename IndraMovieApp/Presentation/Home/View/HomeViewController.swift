@@ -60,6 +60,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                
         //viewModel.makeDetailView(movieID: String(self.movies[indexPath.row].movieID))
+        
+        if !(Connectivity.isConnectedToInternet() ?? false) {
+            showAlertView(tittle: "Mensaje", message: "No existe conexion a internet")
+            return
+        }
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         guard let controller = storyboard.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else {
             return
